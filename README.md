@@ -108,9 +108,11 @@ with an optional sample size value (defaults to 50):
 This will build the binary for each implementation and then run it
 `SAMPLES` time, taking the runtime for each run and aggregating the
 results. In the end, you will get the mean and standard error real, user
-and system times, in milliseconds.
+and system times, in milliseconds. You will also get a total count of
+the implementation's lines of code, for what that's worth.
 
-(Note: You will need GNU Make, GNU Awk and R for all this to happen!)
+(Note: You will need GNU Make, GNU Awk, [R](https://www.r-project.org)
+and [cloc](https://github.com/AlDanial/cloc) for all this to happen!)
 
 ## MIT License
 
