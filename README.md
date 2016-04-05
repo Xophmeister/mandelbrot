@@ -114,6 +114,14 @@ the implementation's lines of code, for what that's worth.
 (Note: You will need GNU Make, GNU Awk, [R](https://www.r-project.org)
 and [cloc](https://github.com/AlDanial/cloc) for all this to happen!)
 
+### Travis CI
+
+[![Build Status](https://travis-ci.org/Xophmeister/mandelbrot.svg)](https://travis-ci.org/Xophmeister/mandelbrot)
+
+The build and sampling, outlined above, is configured to run as part of
+a continuous integration job. The Travis CI log will therefore
+ultimately contain the runtime statistics.
+
 ## MIT License
 
 Copyright (c) 2016 Christopher Harrison
