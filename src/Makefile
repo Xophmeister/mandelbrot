@@ -4,7 +4,7 @@ all: $(DIRS) ;
 
 $(DIRS):
 ifndef CLEAN
-	@echo "$$((grep "^$@\t" .manifest || echo "$@") | cut -f2)" ; \
+	@echo "$$( (grep "^$@\t" .manifest || echo "$@") | cut -f2 )" ; \
 	$(MAKE) -C $@ build >/dev/null ; \
 	echo "  Code  $$(cloc $@ --exclude-lang=make --sum-one | awk '/^SUM:/ { print $$NF }') sloc" ; \
 	for i in $$(seq $(SAMPLES)); do \
